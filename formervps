@@ -1,0 +1,47 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+# Check if user is root
+if [ $(id -u) != "0" ]; then
+    echo "Error: You must be root to run this script, please use root to install lnmp"
+    exit 1
+fi
+
+cur_dir=$(pwd)
+Stack=$1
+if [ "${Stack}" = "" ]; then
+    Stack="lnmp"
+else
+    Stack=$1
+fi
+
+LNMP_Ver='1.2'
+
+. include/main.sh
+. include/init.sh
+. include/mysql.sh
+. include/mariadb.sh
+. include/php.sh
+. include/nginx.sh
+. include/apache.sh
+. include/end.sh
+
+
+case "${Stack}" in
+    lnmp)
+        Dispaly_Selection
+        LNMP_Stack 2>&1 | tee -a /root/lnmp-install.log
+        ;;
+    lnmpa)
+        Dispaly_Selection
+        LNMPA_Stack 2>&1 | tee -a /root/lnmp-install.log
+        ;;
+    lamp)
+        Dispaly_Selection
+        LAMP_Stack 2>&1 | tee -a /root/lnmp-install.log
+        ;;
+    *)
+        Echo_Red "Usage: $0 {lnmp|lnmpa|lamp}"
+        ;;
+esac

@@ -1,0 +1,258 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wp",
+				"wp-content"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Aaron/Documents/WEB/LAMP/whg/lamp.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/movevps/import.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/movevps/backup.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/install/inlude/lamp.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/install.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/adddomain.sh",
+		"/Users/Aaron/Downloads/lnmp1.2/include/main.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/shtrial.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/main.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/add domain.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/conf/firewall",
+		"/Users/Aaron/Documents/WEB/LAMP/conf/iptables.firewall.rules",
+		"/Users/Aaron/Documents/WEB/LAMP/conf/firewall.sh",
+		"/Users/Aaron/Documents/WEB/LAMP/iptables.firewall.rules",
+		"/Users/Aaron/Documents/WEB/shtrial.sh",
+		"/Users/Aaron/Desktop/Tunnelblick VPN 配置样本/config.ovpn",
+		"/Users/Aaron/Documents/WEB/security/VPN/client.conf",
+		"/Users/Aaron/Downloads/pptpd.sh",
+		"/Users/Aaron/Documents/WEB/VPS Setting/zhangpeng.info",
+		"/Users/Aaron/Documents/WEB/security/VPN/WHG.ovpn",
+		"/Users/Aaron/Documents/WEB/security/VPN/ca.crt",
+		"/Users/Aaron/Documents/WEB/security/VPN/client1.crt",
+		"/Users/Aaron/Documents/WEB/security/VPN/client1.key",
+		"/Users/Aaron/Desktop/untitled.html",
+		"/private/etc/hosts",
+		"/Users/Aaron/Documents/WEB/# domain: oxtheme.com.conf",
+		"/Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/wp/wp-content/themes/oxbox/languages/zh_CN.po",
+		"/Users/Aaron/Documents/WEB/VPS Setting/Tasks",
+		"/Users/Aaron/Documents/Stock/hh",
+		"/Applications/XAMPP/xamppfiles/htdocs/wp/wp-content/themes/twentyfourteen/languages/twentyfourteen.pot",
+		"/Users/Aaron/Documents/WEB/VPS Setting/download wordpress",
+		"/Users/Aaron/Documents/WEB/VPS Setting/dowloadplugins",
+		"/Users/Aaron/Documents/Desktop/1",
+		"/Users/Aaron/Documents/WEB/VPS Setting/htacess file",
+		"/Users/Aaron/Documents/WEB/VPS Setting/updated plugins",
+		"/Users/Aaron/Documents/WEB/VPS Setting/Update database",
+		"/Users/Aaron/Documents/WEB/VPS Setting/MySQL database list",
+		"/Users/Aaron/Documents/WEB/VPS Setting/1GMech",
+		"/Users/Aaron/Documents/Project Simpleblue base.sublime-project",
+		"/Users/Aaron/Documents/Wordpress Themes yetlive.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/wp/wp-content/themes/project_1/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/wp/wp-config.php",
+		"/Applications/XAMPP/xamppfiles/etc/httpd.conf",
+		"/Users/Aaron/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sql",
+			"import/sql",
+			"SQL",
+			"sql",
+			"SQL",
+			"sql",
+			"SQL",
+			"sql",
+			"SQL",
+			"sql",
+			"SQL",
+			"sql",
+			"SQL",
+			"sql",
+			"SQL",
+			"sql",
+			"wp-content/themes",
+			"hostdir",
+			"/public_html",
+			"/var/www",
+			"/var/www/html/",
+			"Enter_Database_Name",
+			"Add_Database_Menu",
+			"Add_Ftp_Menu",
+			"Add_Ftp",
+			"Add_Database",
+			"ServerAdmin",
+			"/home/wwwroot/",
+			"vhostdir",
+			"MysqlRootPWD",
+			"URL",
+			"Get_Dist_Name",
+			"www",
+			"1.txt",
+			"Echo_Green",
+			"Echo_Red",
+			"your-server-ip",
+			"clientaaron",
+			"server",
+			"example",
+			"zhangpeng.info",
+			"user",
+			"lang",
+			"lan gua ge",
+			"lan gua rage"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pptp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
