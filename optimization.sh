@@ -17,7 +17,7 @@ http://zmingcx.com/wordpress-backup-and-recovery.html
 # backup database
 http://www.forece.net/post/3285.htm
 
-mysqldump -h localhost -pZp1214@web.sQL ${databasename} -u root >${databasename}.sql
+mysqldump -h localhost -pPassword ${databasename} -u root >${databasename}.sql
 
 http://zhidao.baidu.com/question/282265574.html
 
