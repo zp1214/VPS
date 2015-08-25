@@ -26,7 +26,7 @@ Install_wordpress()
     cp -R wordpress/* ${hostdir}/public_html/
     cd ${hostdir}/public_html
     rm -rf src
-    chown -R www-data:www-data ${hostdir}
+    chown -R www-data:www-data ${hostdir}/public_html
 }
 
 Install_wordpress
