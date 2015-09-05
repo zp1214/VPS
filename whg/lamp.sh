@@ -90,8 +90,33 @@ sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 echo "localhost" > /etc/HOSTNAME
 hostname -F /etc/HOSTNAME
 
-#ensure that mod_rewrite is enabled
+#create mod_expires Cache strategy
+cat >/etc/apache2/mods-available/expires.conf<<eof
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault A600
+    ExpiresByType image/x-icon A2592000
+    ExpiresByType application/x-javascript A604800
+    ExpiresByType application/javascript A604800
+    ExpiresByType text/css A604800
+    ExpiresByType image/gif A2592000
+    ExpiresByType image/png A2592000
+    ExpiresByType image/jpeg A2592000
+    ExpiresByType text/plain A86400
+    ExpiresByType application/x-shockwave-flash A2592000
+    ExpiresByType video/x-flv A2592000
+    ExpiresByType application/pdf A2592000
+    ExpiresByType text/html A600
+</IfModule>
+eof
+
+#ensure that mod_rewrite is enabled for Worpdress permernant links
 a2enmod rewrite
+#ensure that mod_deflate is enabled for GZIP
+a2enmod deflate
+#ensure that mod_expires is enabled for Cache
+a2enmod expires
+
 service apache2 restart
 
 #Installing MySQL

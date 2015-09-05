@@ -1,0 +1,4 @@
+按照文件内容可以知道，将下面代码放进.htaccess文件最底部应该也可以
+
+Redirect 301 /go/xxoo http://www.baidu.com
+自己照着修改就是了。

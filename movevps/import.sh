@@ -72,6 +72,7 @@ Import_File()
 
 		cd /var/www/html/import/${importdomain}/wpconfig
 		cp -pf wp-config.php /var/www/${importdomain}/public_html
+
 		chmod -R 755 /var/www/${importdomain}/public_html/wp-content
 		chown -R www-data:www-data /var/www/${importdomain}/public_html/wp-content
         chmod -R 644 /var/www/${importdomain}/public_html/wp-config.php
@@ -190,7 +191,7 @@ eof
   ServerAlias ${importdomain}
 
   # Index file and Document Root (where the public files are located)
-  DirectoryIndex index.html index.php
+  DirectoryIndex index.php index.html
   DocumentRoot ${hostdir}/public_html
   # Log file locations
   LogLevel warn

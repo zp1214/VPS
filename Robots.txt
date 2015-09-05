@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /wp-a*
+Allow: /wp-content/uploads/
+
+
+Sitemap: http://www.zhangpeng.info/sitemap.xml

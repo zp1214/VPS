@@ -63,7 +63,7 @@ eof
   ServerAlias ${domain}
 
   # Index file and Document Root (where the public files are located)
-  DirectoryIndex index.html index.php
+  DirectoryIndex index.php index.html
   DocumentRoot ${hostdir}/public_html
   # Log file locations
   LogLevel warn
