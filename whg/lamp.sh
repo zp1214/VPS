@@ -77,7 +77,7 @@ apt-get -y install apache2
 #Optimizing Apache for a Linode 1GB
 cp /etc/apache2/apache2.conf /etc/apache2/apache2.backup.conf
 sed -i "$ a ServerName localhost" /etc/apache2/apache2.conf
-sed -i "s/KeepAlive On/KeepAlive Off/g" /etc/apache2/apache2.conf
+# sed -i "s/KeepAlive On/KeepAlive Off/g" /etc/apache2/apache2.conf
 sed -i "$ a <IfModule mpm_prefork_module>" /etc/apache2/apache2.conf
 sed -i "$ a StartServers 2" /etc/apache2/apache2.conf
 sed -i "$ a MinSpareServers 6" /etc/apache2/apache2.conf
@@ -94,8 +94,8 @@ hostname -F /etc/HOSTNAME
 cat >/etc/apache2/mods-available/expires.conf<<eof
 <IfModule mod_expires.c>
     ExpiresActive on
-    ExpiresDefault A600
-    ExpiresByType image/x-icon A2592000
+    ExpiresDefault A86400
+    ExpiresByType image/x-icon A7776000
     ExpiresByType application/x-javascript A604800
     ExpiresByType application/javascript A604800
     ExpiresByType text/css A604800
@@ -106,7 +106,10 @@ cat >/etc/apache2/mods-available/expires.conf<<eof
     ExpiresByType application/x-shockwave-flash A2592000
     ExpiresByType video/x-flv A2592000
     ExpiresByType application/pdf A2592000
-    ExpiresByType text/html A600
+    ExpiresByType text/html A3600
+    ExpiresByType application/x-font-woff A7776000
+    ExpiresByType application/vnd.ms-fontobject A7776000
+    ExpiresByType image/svg+xml A7776000
 </IfModule>
 eof
 

@@ -83,3 +83,62 @@ source bak.sql
 
 
 PS一句：刚才看到万戈用 Shell 命令导入数据库，用的是 Mysql 命令，大家也可以借鉴一下。
+
+
+
+mkdir /var/www/html/tmp
+cd /var/www/html/tmp
+wget https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-beta_current_amd64.deb
+sudo dpkg -i mod-pagespeed-*.deb
+sudo apt-get -f install
+
+
+
+
+
+<IfModule mod_deflate.c>
+        <IfModule mod_filter.c>
+                # these are known to be safe with MSIE 6
+                AddOutputFilterByType DEFLATE text/html text/plain text/xml
+
+                # everything else may cause problems with MSIE 6
+                AddOutputFilterByType DEFLATE text/css
+                AddOutputFilterByType DEFLATE application/x-javascript applicat$
+                AddOutputFilterByType DEFLATE application/rss+xml
+                AddOutputFilterByType DEFLATE application/xml
+                AddOutputFilterByType DEFLATE application/x-font-woffl
+                AddOutputFilterByType DEFLATE image/jpeg
+        </IfModule>
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+
+ A7776000
+    ExpiresByType application/vnd.ms-fontobject A7776000
+    ExpiresByType image/svg+xml
+
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault A86400
+    ExpiresByType image/x-icon A7776000
+    ExpiresByType application/x-javascript A604800
+    ExpiresByType application/javascript A604800
+    ExpiresByType text/css A604800
+    ExpiresByType image/gif A2592000
+    ExpiresByType image/png A2592000
+    ExpiresByType image/jpeg A2592000
+    ExpiresByType text/plain A86400
+    ExpiresByType application/x-shockwave-flash A2592000
+    ExpiresByType video/x-flv A2592000
+    ExpiresByType application/pdf A2592000
+    ExpiresByType text/html A3600
+    ExpiresByType application/x-font-woffl A7776000
+    ExpiresByType application/vnd.ms-fontobject A7776000
+    ExpiresByType image/svg+xml A7776000
+</IfModule>
+
+
+
+

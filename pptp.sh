@@ -21,7 +21,7 @@ PPTP ()
 	sed -i 's/#ms-dns 10.0.0.1/ms-dns 8.8.8.8/g' /etc/ppp/pptpd-options
 	sed -i 's/#ms-dns 10.0.0.2/ms-dns 8.8.4.4/g' /etc/ppp/pptpd-options
 
-	sed -i "$ a zp1214 pptpd test *" /etc/ppp/chap-secrets
+	sed -i "$ a test pptpd test *" /etc/ppp/chap-secrets
 
 	sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 	/sbin/sysctl -p
@@ -74,24 +74,10 @@ COMMIT
 eof
 iptables-restore < /etc/iptables.firewall.rules
 
-	rm /etc/rc.local
-	cat >/etc/rc.local<<eof
-#!/bin/sh -e
-#
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
-
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-
-exit 0
+# activate firewall every time you restart your VPS
+cat >/etc/network/if-pre-up.d/firewall<<eof
+#!/bin/sh
+/sbin/iptables-restore < /etc/iptables.firewall.rules
 eof
 
 service pptpd restart
