@@ -21,7 +21,7 @@ PPTP ()
 	sed -i 's/#ms-dns 10.0.0.1/ms-dns 8.8.8.8/g' /etc/ppp/pptpd-options
 	sed -i 's/#ms-dns 10.0.0.2/ms-dns 8.8.4.4/g' /etc/ppp/pptpd-options
 
-	sed -i "$ a test pptpd test *" /etc/ppp/chap-secrets
+	sed -i "$ a username pptpd password *" /etc/ppp/chap-secrets
 
 	sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 	/sbin/sysctl -p
